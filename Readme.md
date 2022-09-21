@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юлия Портнова](https://up.htmlacademy.ru/htmlcss/35/user/454717).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
