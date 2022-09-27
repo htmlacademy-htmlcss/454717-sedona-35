@@ -11,16 +11,18 @@
     <header class="page-header">
 
       <nav class="navigation">
-        <a class="navigation-logo"><img src="" alt="Логотип сервиса бронирования отелей в Седоне."></a>
+        <a class="navigation-logo" href="index.html">
+          <img src="" alt="Логотип сервиса бронирования отелей в Седоне.">
+        </a>
         <ul class="main-navigation-list">
           <li class="main-navigation-item">
-            <a class="main-navigation-link current-link">Главная</a>
+            <a class="main-navigation-link" href="index.html">Главная</a>
           </li>
           <li class="main-navigation-item">
-            <a class="main-navigation-link" href="about-sedona">О Седоне</a>
+            <a class="main-navigation-link" href="about-sedona.html">О Седоне</a>
           </li>
           <li class="main-navigation-item">
-            <a class="main-navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="main-navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <ul class="user-navigation-list">
@@ -43,6 +45,70 @@
 
     <main class="main-catalog">
 
+      <h1 class="inner-header-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ul>
+      <section class="catalog-hotels">
+        <h2 class="visually-hidden">Список отелей с фильтрами</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип Жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="accommodation-type" value="hotel" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="accommodation-type" value="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="accommodation-type" value="apartments">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <input type="submit" value="Применить">
+          <input type="reset" value="Сбросить">
+        </form>
+      </section>
 
     </main>
 
@@ -51,7 +117,7 @@
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" name="newsletter-email" placeholder="Ваш e-mail" required>
           <input class="button newsletter-button" type="submit" value="Подписаться">
         </form>
@@ -67,7 +133,7 @@
             <a href="https://t.me/htmlacademy"><span class="visually-hidden">Телеграм</span></a>
           </li>
           <li class="socials-item">
-            <a href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span></a>
+            <a href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
       </section>
