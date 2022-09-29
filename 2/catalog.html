@@ -221,17 +221,20 @@
 
   <footer class="page-footer">
 
-    <section class="newsletter">
-      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+    <section class="subscribe" data-test="subscribe">
+      <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" name="newsletter-email" placeholder="Ваш e-mail" required>
-        <input class="button newsletter-button" type="submit" value="Подписаться">
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label>
+          <span class="visually-hidden">Ваш e-mail</span>
+          <input type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+        </label>
+        <input class="button subscribe-button" type="submit" value="Подписаться">
       </form>
     </section>
 
     <section class="socials">
-      <h2 class="visually-hidden">Соцсети</h2>
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul class="socials-list">
         <li class="socials-item">
           <a href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
@@ -246,9 +249,9 @@
     </section>
 
     <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <p class="copyright">
-      <a class="copyright-link" href="https://htmlacademy.ru/">.html academy</a>
-    </p>
+    <a class="copyright-link" href="https://htmlacademy.ru/">
+      <img src="" alt="Логотип HTML Academy">
+    </a>
 
   </footer>
 
