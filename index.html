@@ -36,10 +36,10 @@
             <span class="favorites-amount">12</span>
           </a>
         </li>
-        <li class="user-navigation-item">
-          <a class="button user-navigation-button" href="#">Хочу сюда!</a>
-        </li>
       </ul>
+      <p class="navigation-order">
+        <a class="button navigation-order-button" href="#">Хочу сюда!</a>
+      </p>
     </nav>
 
   </header>
@@ -49,9 +49,10 @@
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Сервис бронирования отелей в Седоне</h1>
       <img class="slogan" src="" alt="Добро пожаловать в Седону!">
-      <p class="about-sedona">Седона — небольшой городок в Аризоне,
-        заслуживающий большего!</p>
     </section>
+
+    <p class="about-sedona">Седона — небольшой городок в Аризоне,
+      заслуживающий большего!</p>
 
     <section class="advantages" data-test="advantages">
       <h2 class="advantages-title">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</h2>
@@ -113,13 +114,16 @@
       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+        <label>
+          <span class="visually-hidden">Ваш e-mail</span>
+          <input type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
+        </label>
         <input class="button subscribe-button" type="submit" value="Подписаться">
       </form>
     </section>
 
     <section class="socials">
-      <h2 class="visually-hidden">Соцсети</h2>
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul class="socials-list">
         <li class="socials-item">
           <a href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
@@ -134,9 +138,10 @@
     </section>
 
     <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <p class="copyright">
-      <a class="copyright-link" href="https://htmlacademy.ru/">.html academy</a>
-    </p>
+    <a class="copyright-link" href="https://htmlacademy.ru/">
+      <img src="" alt="Логотип HTML Academy">
+    </a>
+
 
   </footer>
 
