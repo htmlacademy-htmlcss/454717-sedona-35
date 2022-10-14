@@ -79,7 +79,7 @@ body {
 }
 
 .navigation-order {
-  min-width: 160px;
+  width: 160px;
 }
 
 .main-navigation-list a,
