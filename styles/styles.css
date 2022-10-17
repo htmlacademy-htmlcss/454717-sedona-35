@@ -20,6 +20,17 @@
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }
@@ -65,25 +76,37 @@ body {
 }
 
 .main-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 460px;
+  list-style-type: none;
 }
 
 .user-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   width: 132px;
   margin-right: 20px;
   margin-left: auto;
+  list-style-type: none;
 }
 
 .navigation-order {
   width: 160px;
+  margin: auto;
+  margin-right: 0;
 }
 
-.main-navigation-list a,
-.user-navigation-list a {
+.main-navigation-link,
+.user-navigation-link {
+  display: block;
+  margin: 0;
+
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -92,6 +115,16 @@ body {
 
   background-color: #FFFFFF;
   text-decoration: none;
+}
+
+.main-navigation-link {
+  padding: 20px 16px;
+}
+
+.user-navigation-link {
+  min-width: 44px;
+  min-height: 64px;
+  padding: 22px 12px;
 }
 
 .user-navigation-favorites .favorites-amount {
