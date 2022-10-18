@@ -310,6 +310,7 @@ body {
 }
 
 .subscribe {
+  padding: 96px 258px 104px;
   text-align: center;
   color: #FFFFFF;
 
@@ -320,9 +321,28 @@ body {
 }
 
 .subscribe-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+}
+
+.subscribe-description {
+  width: 475px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  margin-top: 34px;
+}
+
+.subscribe-input-email {
+  width: 452px;
 }
 
 .subscribe-input-email::placeholder {
@@ -346,14 +366,24 @@ body {
 
 .contacts {
   display: flex;
-  padding: 0 70px;
+  padding: 40px 70px 30px;
 }
 
 .contacts-socials-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 330px;
   margin: 0;
   margin-right: 35px;
   padding: 0;
+
+  list-style-type: none;
+}
+
+.contacts-socials-item {
+  outline: 1px solid #82B3D3;
+  width: 47px;
+  height: 40px;
 }
 
 .contacts-phone-number {
