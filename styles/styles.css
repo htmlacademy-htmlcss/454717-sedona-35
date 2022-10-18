@@ -137,6 +137,7 @@ body {
 }
 
 .button {
+  display: block;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -151,6 +152,7 @@ body {
 }
 
 .hero {
+  min-height: 485px;
   margin: 0 auto;
 
   text-align: center;
@@ -165,13 +167,23 @@ body {
 .hero-slogan {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
 }
 
 .advantages {
   text-align: center;
 }
 
+.advantages-title-container {
+  min-height: 282px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
 .advantages-about-sedona {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -180,6 +192,9 @@ body {
 }
 
 .advantages-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -190,11 +205,27 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-item {
   width: 400px;
+  min-height: 384px;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 230px;
+  height: 100%;
+  margin: auto;
+  padding-bottom: 18px;
+}
+
+.advantages-item-with-icon-container {
+  padding-bottom: 0;
 }
 
 .advantages-item-with-photo {
@@ -211,6 +242,10 @@ body {
 }
 
 .advantages-subtitle {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 62px;
+
   color: #000000;
   font-weight: bold;
   font-size: 24px;
@@ -218,7 +253,14 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-item-with-icon-container .advantages-subtitle {
+  padding-top: 102px;
+  padding-bottom: 30px;
+}
+
 .advantages-description {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 21px;
 }
@@ -242,16 +284,27 @@ body {
 }
 
 .hotel-search {
+  padding: 96px 304px;
   text-align: center;
 }
 
 .hotel-search-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 
+.hotel-search-description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
 .hotel-search-button {
+  margin-top: 34px;
   font-size: 20px;
   line-height: 36px;
 }
