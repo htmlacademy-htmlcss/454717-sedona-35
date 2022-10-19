@@ -31,6 +31,11 @@
   overflow: hidden;
 }
 
+.alignment-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 html {
   height: 100%;
 }
@@ -62,7 +67,6 @@ body {
 
 .page-header {
   display: flex;
-  margin: 0 70px;
 }
 
 .header-logo {
@@ -175,9 +179,7 @@ body {
 }
 
 .advantages-title-container {
-  min-height: 282px;
-  padding-top: 69px;
-  padding-bottom: 69px;
+  padding: 69px 274px 90px;
 }
 
 .advantages-about-sedona {
@@ -281,6 +283,12 @@ body {
 
 .background-color-inherit {
   background-color: inherit;
+}
+
+.hotels-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .hotel-search {
@@ -403,8 +411,10 @@ body {
 }
 
 /* Catalog */
-.hero-container {
-  padding: 0 70px;
+
+.catalog-hero-container {
+  padding-top: 35px;
+  padding-bottom: 70px;
   color: #FFFFFF;
 
   background-color: #3F5E72;
@@ -414,16 +424,36 @@ body {
 }
 
 .inner-header-title {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
+}
+
 .breadcrumbs-link {
+  outline: 1px solid red;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.breadcrumbs-item:first-child {
+  outline: 1px solid green;
+  width: 23px;
+}
+
+.breadcrumbs-item:not(:first-child) .breadcrumbs-link {
+  padding-left: 17px;
 }
 
 .catalog-filter-form {
@@ -446,6 +476,12 @@ body {
   line-height: 24px;
 }
 
+.filter-form-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .filter-form-group-price {
   width: 288px;
   margin-right: 70px;
@@ -465,11 +501,36 @@ body {
   background-color: transparent;
 }
 
+.results {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
 .results-amount {
+  width: 468px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+}
+
+.results-select {
+  margin-left: auto;
+}
+
+.results-view-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.results-view-item {
+  outline: 1px solid red;
+  width: 48px;
+  height: 48px;
+  margin-left: 8px;
 }
 
 .hotel-card {
@@ -500,7 +561,23 @@ body {
   background-color: #F2F2F2;
 }
 
+.pagination {
+  display: flex;
+  margin: 40px 0 50px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  padding-right: 8px;
+}
+
 .pagination-link {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
