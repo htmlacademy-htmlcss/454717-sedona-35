@@ -564,6 +564,18 @@ body {
   justify-self: end;
 }
 
+.hotel-card-wrapper {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+.hotel-card-stars {
+  margin: 0;
+}
+
 .hotel-card-rating {
   margin: 0;
   font-size: 16px;
