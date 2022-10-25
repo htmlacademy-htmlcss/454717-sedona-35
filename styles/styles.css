@@ -27,7 +27,7 @@
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -102,8 +102,7 @@ body {
 
 .navigation-order {
   width: 160px;
-  margin: auto;
-  margin-right: 0;
+  margin: auto 0;
 }
 
 .main-navigation-link,
@@ -131,7 +130,23 @@ body {
   padding: 22px 12px;
 }
 
+.user-navigation-search {
+  display: block;
+  background-image: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.user-navigation-favorites {
+  display: block;
+  position: relative;
+  background-image: url("../images/header/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .user-navigation-favorites .favorites-amount {
+  position: absolute;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
@@ -141,7 +156,9 @@ body {
 }
 
 .button {
-  display: block;
+  display: inline-block;
+  padding: 8px 50px;
+
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -153,6 +170,13 @@ body {
   border: none;
   text-transform: uppercase;
   text-decoration: none;
+
+  cursor: pointer;
+}
+
+.navigation-order-button {
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .hero {
@@ -222,6 +246,20 @@ body {
 
 .advantages-item-with-icon {
   padding-bottom: 92px;
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.advantages-item-with-icon:nth-child(1) {
+  background-image: url("../images/index/advantages-icon-house.svg");
+}
+
+.advantages-item-with-icon:nth-child(2) {
+  background-image: url("../images/index/advantages-icon-food.svg");
+}
+
+.advantages-item-with-icon:nth-child(3) {
+  background-image: url("../images/index/advantages-icon-gift.svg");
 }
 
 .advantages-item-container {
@@ -382,10 +420,20 @@ body {
   list-style-type: none;
 }
 
-.contacts-socials-item {
-  outline: 1px solid #82B3D3;
+.contacts-socials-link {
+  display: block;
   width: 47px;
   height: 40px;
+  position: relative;
+}
+
+.contacts-socials-icon {
+ position: absolute;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ margin: auto;
 }
 
 .contacts-phone-number {
