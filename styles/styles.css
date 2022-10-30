@@ -21,14 +21,8 @@
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
+  position: fixed;
+  transform: scale(0);
 }
 
 .alignment-container {
@@ -105,12 +99,15 @@
   .button:focus {
     background-color: #615048;
   }
+
   .button-blue:focus {
     background-color: #68A2CA;
   }
+
   .button-green:focus {
     background-color: #6C9E42;
   }
+
   .button-transparent:focus {
     background-color: transparent;
   }
@@ -170,6 +167,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -490,6 +488,10 @@ body {
   background-color: inherit;
 }
 
+.hotels {
+  border-bottom: 1px solid #E6E6E6;;
+}
+
 .hotels-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -531,6 +533,9 @@ body {
 .subscribe {
   padding: 96px 258px 104px;
   text-align: center;
+}
+
+.subscribe-index {
   color: #FFFFFF;
 
   background-color: #3F5E72;
@@ -546,6 +551,12 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+
+  color: #000000;
+}
+
+.subscribe-index .subscribe-title {
+  color: #FFFFFF;
 }
 
 .subscribe-description {
@@ -607,21 +618,21 @@ body {
   fill: #83B3D3;
 }
 
-.contacts-socials-link:hover .contacts-socials-icon{
+.contacts-socials-link:hover .contacts-socials-icon {
   fill: #68A2CA;
 }
 
-.contacts-socials-link:focus-visible .contacts-socials-icon{
+.contacts-socials-link:focus-visible .contacts-socials-icon {
   fill: #68A2CA;
 }
 
 @supports not selector(::focus-visible) {
-  .contacts-socials-link:focus .contacts-socials-icon{
+  .contacts-socials-link:focus .contacts-socials-icon {
     fill: #68A2CA;
   }
 }
 
-.contacts-socials-link:active .contacts-socials-icon{
+.contacts-socials-link:active .contacts-socials-icon {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -857,6 +868,28 @@ body {
 .hotel-card-link {
   grid-column: 1 / -1;
   text-decoration: none;
+
+  color: #000000;
+}
+
+.hotel-card-link:hover {
+  color: #756157;
+}
+
+.hotel-card-link:focus-visible {
+  color: #756157;
+  outline: 3px solid #756157;
+}
+
+@supports not selector(:focus-visible) {
+  .hotel-card-link:focus {
+    color: #756157;
+    outline: 3px solid #756157;
+  }
+}
+
+.hotel-card-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .hotel-card-photo {
@@ -869,7 +902,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
+  color: inherit;
 }
 
 .hotel-card-text {
@@ -951,6 +984,24 @@ body {
   text-decoration: none;
 }
 
+.pagination-link[href]:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link[href]:focus-visible {
+  background-color: #68A2CA;
+}
+
+@supports not selector(:focus-visible) {
+  .pagination-link[href]:focus {
+    background-color: #68A2CA;
+  }
+}
+
+.pagination-link[href]:active {
+  background-color: #82B3D3;
+}
+
 .pagination-link-current {
   color: #000000;
 
@@ -961,5 +1012,28 @@ body {
   text-align: center;
   color: #000000;
 
+  background: none;
   text-decoration: none;
+}
+
+.pagination-show-more[href]:hover {
+  color: #756157;
+  background: none;
+}
+
+.pagination-show-more[href]:focus-visible {
+  color: #756157;
+  background: none;
+}
+
+@supports not selector(:focus-visible) {
+  .pagination-show-more[href]:focus {
+    color: #756157;
+    background: none;
+  }
+}
+
+.pagination-show-more[href]:active {
+  color: rgba(117, 97, 87, 0.3);
+  background: none;
 }
