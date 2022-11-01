@@ -21,8 +21,14 @@
 }
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .alignment-container {
@@ -273,7 +279,7 @@ body {
 .user-navigation-link {
   min-width: 44px;
   min-height: 64px;
-  padding: 22px 12px;
+  padding: 22px 12px 17px;
 }
 
 .user-navigation-icon {
@@ -321,6 +327,8 @@ body {
   position: absolute;
   top: 11px;
   right: 2px;
+  min-height: 20px;
+  min-width: 20px;
   padding: 5px;
   border-radius: 10px;
 
@@ -723,17 +731,14 @@ body {
 }
 
 .breadcrumbs-item:first-child {
-  width: 13px;
+  min-width: 13px;
 }
 
-.breadcrumbs-item:not(:first-child) .breadcrumbs-link {
-  margin-left: 27px;
-}
-
-.breadcrumbs-item:not(:first-child) svg {
-  position: absolute;
-  top: 6px;
-  left: 10px;
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 29px;
+  background-image: url("../images/catalog/icons/breadcrumbs-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 11px center;
 }
 
 .catalog-filter-form {
