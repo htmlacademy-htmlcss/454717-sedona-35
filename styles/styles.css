@@ -756,6 +756,7 @@ body {
 .filter-form-title {
   margin: 0;
   padding: 0;
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -765,6 +766,62 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.filter-form-item {
+  margin-bottom: 16px;
+}
+
+.control-mark {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  background-color: #FFFFFF;
+}
+
+.control-mark-checkbox {
+  border-radius: 4px;
+}
+
+.control-mark-radio {
+  border-radius: 50%;
+}
+
+.checkbox-input:checked + .control-mark-checkbox {
+  background-image: url("../images/catalog/icons/filter-check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.radio-input:checked + .control-mark-radio {
+  width: 20px;
+  height: 20px;
+  border: 5px solid #FFFFFF;
+  background-color: #3F5E72;
+}
+
+.checkbox-input:hover ~ span,
+.radio-input:hover ~ span {
+  opacity: 0.6;
+}
+
+.checkbox-input:focus-visible + .control-mark,
+.radio-input:focus-visible + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+@supports not selector(:focus-visible) {
+  .checkbox-input:focus + .control-mark,
+  .radio-input:focus + .control-mark {
+    outline: 3px solid #83B3D3;
+  }
+}
+
+.checkbox-input:disabled ~ span,
+.radio-input:disabled ~ span {
+  opacity: 0.3;
 }
 
 .filter-form-group-price {
@@ -787,10 +844,98 @@ body {
   margin-bottom: 32px;
 }
 
-
 .filter-form-control {
   font-size: 18px;
   line-height: 23px;
+}
+
+.range-wrapper-inputs {
+  width: 288px;
+  display: flex;
+  gap: 2px;
+}
+
+.range-wrapper-input {
+  position: relative;
+  width: 143px;
+}
+
+.range-input:active {
+  outline: 2px solid #000000;
+}
+
+.range-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  font: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  appearance: textfield;
+}
+
+
+.range-wrapper-input:first-child .range-input {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-wrapper-input:last-child .range-input,
+.range-wrapper-input:last-child .range-label  {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 11px 20px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  margin-top: 48px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+}
+
+.toggle-min {
+  left: 0;
+  top: -8px;
+}
+
+.toggle-max {
+  right: 0;
+  top: -8px;
 }
 
 .results {
