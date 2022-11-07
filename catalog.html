@@ -175,11 +175,13 @@
           <section class="results">
             <h2 class="visually-hidden">Результы поиска гостиницы</h2>
             <p class="results-amount">Найдено гостиниц: <span>38</span></p>
-            <select class="results-select" name="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
+            <div class="results-select">
+              <select class="results-select-control" name="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+            </div>
             <ul class="results-view-list">
               <li class="results-view-item">
                 <a class="view-button view-button-current view-button-table" href="#">
@@ -316,7 +318,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label>
               <span class="visually-hidden">Ваш e-mail</span>
-              <input class="subscribe-input-email" type="email" name="subscribe-email" placeholder="Ваш e-mail"
+              <input class="input-text subscribe-input-email" type="email" name="subscribe-email" placeholder="Ваш e-mail"
                 required>
             </label>
             <input class="button button-blue subscribe-button" type="submit" value="Подписаться">
