@@ -859,7 +859,6 @@ body {
 
 .tooltip-text {
   position: absolute;
-  display: block;
   width: 256px;
   margin: 0;
   margin-top: 15px;
