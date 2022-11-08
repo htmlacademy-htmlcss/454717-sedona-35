@@ -725,6 +725,10 @@ body {
   border-radius: 30px;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal-close {
   position: absolute;
   top: 64px;
