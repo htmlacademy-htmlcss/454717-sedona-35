@@ -134,8 +134,8 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label>
               <span class="visually-hidden">Ваш e-mail</span>
-              <input class="input-text subscribe-input-email" type="email" name="subscribe-email" placeholder="Ваш e-mail"
-                required>
+              <input class="input-text subscribe-input-email" type="email" name="subscribe-email"
+                placeholder="Ваш e-mail" required>
             </label>
             <input class="button button-blue subscribe-button" type="submit" value="Подписаться">
           </form>
@@ -188,7 +188,8 @@
 
     </div>
 
-    <div class="modal-container modal-container-close ">
+    <div class="modal-container">
+      <!-- modal-container-close -->
       <section class="modal modal-search">
         <button class="modal-close" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -199,27 +200,31 @@
           <div class="modal-date-container">
             <label class="modal-label" for="modal-arrival-date">Дата заезда:</label>
             <div class="modal-wrapper">
-              <input class="input-text modal-date-input" name="arrival-date" id="modal-arrival-date" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
+              <input class="input-text modal-date-input" name="arrival-date" id="modal-arrival-date" type="text"
+                placeholder="Укажите дату" value="27 апреля 2020" required>
               <p class="modal-massage modal-massage-error">Мы не можем отправить вас в прошлое.</p>
             </div>
             <label class="modal-label" for="modal-departure-date">Дата выезда:</label>
             <div class="modal-wrapper">
-              <input class="input-text modal-date-input" name="departure-date" id="modal-departure-date" type="text" placeholder="Укажите дату" value="1 сентября 2023" required>
+              <input class="input-text modal-date-input" name="departure-date" id="modal-departure-date" type="text"
+                placeholder="Укажите дату" value="1 сентября 2023" required>
               <p class="modal-massage">На эти даты есть свободные номера. Пока есть.</p>
             </div>
           </div>
           <div class="modal-guests-container">
             <div class="guests-number">
               <label class="modal-label modal-label-guests" for="adults-number">Взрослые:</label>
-              <button class="guests-button less-guests-button" type="button">
-                <span class="visually-hidden">Уменьшить количество.</span>
-                <span class="modal-number-icon modal-less-icon"></span>
-              </button>
-              <input class="guests-input" id="adults-number" type="number" value="2" required>
-              <button class="guests-button more-guests-button" type="button">
+              <div class="guests-number-wrapper">
+                <button class="guests-button less-guests-button" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                  <span class="modal-number-icon modal-less-icon"></span>
+                </button>
+                <input class="guests-input" id="adults-number" type="number" value="2" required>
+                <button class="guests-button more-guests-button" type="button">
                   <span class="visually-hidden">Увеличить количество.</span>
                   <span class="modal-number-icon modal-more-icon"></span>
-              </button>
+                </button>
+              </div>
             </div>
             <div class="guests-number">
               <span class="modal-label-guests">
@@ -232,15 +237,17 @@
                   </span>
                 </span>
               </span>
-              <button class="guests-button less-guests-button" type="button">
-                <span class="visually-hidden">Уменьшить количество.</span>
-                <span class="modal-number-icon modal-less-icon"></span>
-              </button>
-              <input class="guests-input" id="children-number" type="number" value="2">
-              <button class="guests-button more-guests-button" type="button">
-                <span class="visually-hidden">Увеличить количество.</span>
-                <span class="modal-number-icon modal-more-icon"></span>
-              </button>
+              <div class="guests-number-wrapper">
+                <button class="guests-button less-guests-button" type="button">
+                  <span class="visually-hidden">Уменьшить количество.</span>
+                  <span class="modal-number-icon modal-less-icon"></span>
+                </button>
+                <input class="guests-input" id="children-number" type="number" value="2">
+                <button class="guests-button more-guests-button" type="button">
+                  <span class="visually-hidden">Увеличить количество.</span>
+                  <span class="modal-number-icon modal-more-icon"></span>
+                </button>
+              </div>
             </div>
           </div>
           <input class="button button-blue modal-search-submit-button" type="submit" value="Найти">

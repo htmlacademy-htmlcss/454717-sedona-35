@@ -870,19 +870,21 @@ body {
 }
 
 .modal-label-guests {
-  -ms-grid-row-align: center;
-      align-self: center;
+  display: flex;
+  width: 137px;
+  align-items: center;
   position: relative;
 }
 
 .tooltip {
-  position: absolute;
+  display: inline-block;
 }
 
 .tooltip-toggle {
   width: 26px;
   height: 26px;
   margin: 0;
+  margin-top: 6px;
   padding: 0;
   margin-left: 10px;
   margin-right: 10px;
@@ -910,6 +912,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   display: none;
+  z-index: 2;
 }
 
 .tooltip-toggle:hover + .tooltip-text {
@@ -929,6 +932,12 @@ body {
   height: 0;
   border: 9px solid transparent;
   border-bottom: 9px solid #333333;
+}
+
+.guests-number-wrapper {
+  display: flex;
+  border-radius: 4px;
+  background-color: #F2F2F2;
 }
 
 .modal-less-icon {
@@ -968,8 +977,7 @@ body {
   position: relative;
   width: 40px;
   height: 48px;
-
-  background-color: #F2F2F2;
+  background-color: transparent;
   border: none;
 }
 
@@ -996,7 +1004,6 @@ body {
 }
 
 .less-guests-button {
-  margin-left: auto;
   padding: 23px 13px;
 }
 
@@ -1025,6 +1032,18 @@ body {
 
 .guests-input:hover {
   background-color: #E6E6E6;
+}
+
+.guests-input:focus-visible {
+  background-color: #E6E6E6;
+  z-index: 1;
+}
+
+@supports not selector(:focus-visible) {
+  .guests-input:focus {
+    background-color: #E6E6E6;
+    z-index: 1;
+  }
 }
 
 .guests-input:active {
