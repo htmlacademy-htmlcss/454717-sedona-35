@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -159,6 +166,22 @@
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
+}
+
+.input-text::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input-text::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input-text:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.input-text::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .input-text::placeholder {
@@ -530,7 +553,9 @@ body {
 }
 
 .hotels-list {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 340px 20px 340px 20px 340px;
   grid-template-columns: repeat(3, 340px);
   margin: 0;
   padding: 0;
@@ -750,15 +775,18 @@ body {
   width: 16px;
   height: 2px;
   background-color: #000000;
-  transform-origin: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .modal-close-icon::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-close-icon::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal-close:hover {
@@ -791,10 +819,14 @@ body {
 }
 
 .modal-date-container {
+  display: -ms-grid;
   display: grid;
   align-items: baseline;
+  -ms-grid-columns: 119px 18px 440px;
   grid-template-columns: 119px 440px;
-  column-gap: 18px;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
 }
 
 .modal-label {
@@ -838,7 +870,8 @@ body {
 }
 
 .modal-label-guests {
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
   position: relative;
 }
 
@@ -874,7 +907,8 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: none;
 }
 
@@ -918,11 +952,13 @@ body {
   width: 14px;
   height: 2px;
   background-color: inherit;
-  transform-origin: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 .modal-more-icon::after {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .guests-button {
@@ -975,12 +1011,15 @@ body {
   color: #000000;
   background-color: #F2F2F2;
   border: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .guests-input::-webkit-outer-spin-button,
 .guests-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1197,7 +1236,9 @@ body {
   font-size: 18px;
   line-height: 24px;
   background-color: #F2F2F2;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 
 
@@ -1221,7 +1262,8 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1301,7 +1343,9 @@ body {
 
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .results-select-control:hover {
@@ -1365,12 +1409,16 @@ body {
 }
 
 .hotel-card {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 140px 20px 140px;
   grid-template-columns: 140px 140px;
   width: 340px;
   padding: 20px;
   row-gap: 16px;
-  column-gap: 20px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
@@ -1403,7 +1451,8 @@ body {
 }
 
 .hotel-card-photo {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: block;
 }
 
@@ -1421,15 +1470,20 @@ body {
 }
 
 .hotel-card-price {
-  justify-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .hotel-card-wrapper {
   margin-top: auto;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 140px 20px 140px;
   grid-template-columns: 140px 140px;
   row-gap: 16px;
-  column-gap: 20px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .hotel-card-stars {
