@@ -31,7 +31,7 @@
           <ul class="user-navigation-list">
             <li class="user-navigation-item">
               <a class="user-navigation-link user-navigation-search" href="#">
-                <span class="visually-hidden">Поиск</span>
+                <span class="visually-hidden">Поиск.</span>
                 <svg class="user-navigation-icon" aria-hidden="true" focusable="false" viewBox="0 0 19 19" width="19"
                   height="19">
                   <path
@@ -41,7 +41,7 @@
             </li>
             <li class="user-navigation-item">
               <a class="user-navigation-link user-navigation-favorites" href="#">
-                <span class="visually-hidden">Избранное</span>
+                <span class="visually-hidden">Избранное.</span>
                 <svg class="user-navigation-icon" aria-hidden="true" focusable="false" viewBox="0 0 20 20" width="20"
                   height="20">
                   <path
@@ -77,91 +77,95 @@
               </li>
             </ul>
             <section class="catalog-filter" data-test="filter">
-              <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
+              <h2 class="visually-hidden">Фильтры поиска гостиницы.</h2>
               <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-                <fieldset class="filter-form-group">
-                  <legend class="filter-form-title">Инфраструктура:</legend>
-                  <ul class="filter-form-list">
-                    <li class="filter-form-item">
-                      <label class="filter-form-control">
-                        <input class="checkbox-input visually-hidden" type="checkbox" name="swimming-pool" checked>
-                        <span class="control-mark control-mark-checkbox"></span>
-                        <span class="control-label">Бассейн</span>
-                      </label>
-                    </li>
-                    <li class="filter-form-item">
-                      <label class="filter-form-control">
-                        <input class="checkbox-input visually-hidden" type="checkbox" name="parking" checked>
-                        <span class="control-mark control-mark-checkbox"></span>
-                        <span class="control-label">Парковка</span>
-                      </label>
-                    </li>
-                    <li class="filter-form-item">
-                      <label class="filter-form-control">
-                        <input class="checkbox-input visually-hidden" type="checkbox" name="Wi-Fi">
-                        <span class="control-mark control-mark-checkbox"></span>
-                        <span class="control-label">Wi-Fi</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="filter-form-group">
-                  <legend class="filter-form-title">Тип Жилья:</legend>
-                  <ul class="filter-form-list">
-                    <li class="filter-form-item">
-                      <label class="filter-form-control">
-                        <input class="radio-input visually-hidden" type="radio" name="accommodation-type" value="hotel"
-                          checked>
-                        <span class="control-mark  control-mark-radio"></span>
-                        <span class="control-label">Гостиница</span>
-                      </label>
-                    </li>
-                    <li class="filter-form-item">
-                      <label class="filter-form-control">
-                        <input class="radio-input visually-hidden" type="radio" name="accommodation-type" value="motel">
-                        <span class="control-mark  control-mark-radio"></span>
-                        <span class="control-label">Мотель</span>
-                      </label>
-                    </li>
-                    <li class="filter-form-item">
-                      <label class="filter-form-control">
-                        <input class="radio-input visually-hidden" type="radio" name="accommodation-type"
-                          value="apartments">
-                        <span class="control-mark control-mark-radio"></span>
-                        <span class="control-label">Апартаменты</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="filter-form-group filter-form-group-price">
-                  <legend class="filter-form-title">Стоимость, ₽:</legend>
-                  <div class="filter-form-range">
-                    <div class="range-wrapper-inputs">
-                      <div class="range-wrapper-input">
-                        <input class="range-input" id="range-min-input" type="number" value="0" name="min-price">
-                        <label class="range-label" for="range-min-input">
-                          от
+                <div class="catalog-filter-left-column">
+                  <fieldset class="filter-form-group">
+                    <legend class="filter-form-title">Инфраструктура:</legend>
+                    <ul class="filter-form-list">
+                      <li class="filter-form-item">
+                        <label class="filter-form-control">
+                          <input class="checkbox-input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                          <span class="control-mark control-mark-checkbox"></span>
+                          <span class="control-label">Бассейн</span>
                         </label>
+                      </li>
+                      <li class="filter-form-item">
+                        <label class="filter-form-control">
+                          <input class="checkbox-input visually-hidden" type="checkbox" name="parking" checked>
+                          <span class="control-mark control-mark-checkbox"></span>
+                          <span class="control-label">Парковка</span>
+                        </label>
+                      </li>
+                      <li class="filter-form-item">
+                        <label class="filter-form-control">
+                          <input class="checkbox-input visually-hidden" type="checkbox" name="Wi-Fi">
+                          <span class="control-mark control-mark-checkbox"></span>
+                          <span class="control-label">Wi-Fi</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="filter-form-group">
+                    <legend class="filter-form-title">Тип Жилья:</legend>
+                    <ul class="filter-form-list">
+                      <li class="filter-form-item">
+                        <label class="filter-form-control">
+                          <input class="radio-input visually-hidden" type="radio" name="accommodation-type" value="hotel"
+                            checked>
+                          <span class="control-mark  control-mark-radio"></span>
+                          <span class="control-label">Гостиница</span>
+                        </label>
+                      </li>
+                      <li class="filter-form-item">
+                        <label class="filter-form-control">
+                          <input class="radio-input visually-hidden" type="radio" name="accommodation-type" value="motel">
+                          <span class="control-mark  control-mark-radio"></span>
+                          <span class="control-label">Мотель</span>
+                        </label>
+                      </li>
+                      <li class="filter-form-item">
+                        <label class="filter-form-control">
+                          <input class="radio-input visually-hidden" type="radio" name="accommodation-type"
+                            value="apartments">
+                          <span class="control-mark control-mark-radio"></span>
+                          <span class="control-label">Апартаменты</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="catalog-filter-center-column">
+                  <fieldset class="filter-form-group-price">
+                    <legend class="filter-form-title">Стоимость, ₽:</legend>
+                    <div class="filter-form-range">
+                      <div class="range-wrapper-inputs">
+                        <div class="range-wrapper-input">
+                          <input class="range-input" id="range-min-input" type="number" value="0" name="min-price">
+                          <label class="range-label" for="range-min-input">
+                            от
+                          </label>
+                        </div>
+                        <div class="range-wrapper-input">
+                          <input class="range-input" id="range-max-input" type="number" value="9000" name="min-price">
+                          <label class="range-label" for="range-max-input">
+                            до
+                          </label>
+                        </div>
                       </div>
-                      <div class="range-wrapper-input">
-                        <input class="range-input" id="range-max-input" type="number" value="9000" name="min-price">
-                        <label class="range-label" for="range-max-input">
-                          до
-                        </label>
+                      <div class="range-scale">
+                        <div class="range-bar" style="left: 0; width: 226px;">
+                          <button type="button" class="range-toggle toggle-min">
+                            <span class="visually-hidden">Изменить минимальную цену.</span>
+                          </button>
+                          <button type="button" class="range-toggle toggle-max">
+                            <span class="visually-hidden">Изменить максимальную цену.</span>
+                          </button>
+                        </div>
                       </div>
                     </div>
-                    <div class="range-scale">
-                      <div class="range-bar" style="left: 0; width: 226px;">
-                        <button type="button" class="range-toggle toggle-min">
-                          <span class="visually-hidden">Изменить минимальную цену.</span>
-                        </button>
-                        <button type="button" class="range-toggle toggle-max">
-                          <span class="visually-hidden">Изменить максимальную цену.</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
+                  </fieldset>
+                </div>
                 <div class="filter-form-buttons">
                   <input class="button button-blue filter-button" type="submit" value="Применить">
                   <input class="button button-transparent filter-button" type="reset" value="Сбросить">
@@ -185,17 +189,17 @@
             <ul class="results-view-list">
               <li class="results-view-item">
                 <a class="view-button view-button-current view-button-table" href="#">
-                  <span class="visually-hidden">Показать карточки</span>
+                  <span class="visually-hidden">Показать карточки.</span>
                 </a>
               </li>
               <li class="results-view-item">
                 <a class="view-button view-button-slideshow" href="#">
-                  <span class="visually-hidden">Показать слайд-шоу</span>
+                  <span class="visually-hidden">Показать слайд-шоу.</span>
                 </a>
               </li>
               <li class="results-view-item">
                 <a class="view-button view-button-list" href="#">
-                  <span class="visually-hidden">Показать список</span>
+                  <span class="visually-hidden">Показать список.</span>
                 </a>
               </li>
             </ul>
@@ -317,20 +321,20 @@
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label>
-              <span class="visually-hidden">Ваш e-mail</span>
-              <input class="input-text subscribe-input-email" type="email" name="subscribe-email" placeholder="Ваш e-mail"
-                required>
+              <span class="visually-hidden">Ваш адрес электронной почты.</span>
+              <input class="input-text subscribe-input-email" type="email" name="subscribe-email"
+                placeholder="Ваш e-mail" required>
             </label>
             <input class="button button-blue subscribe-button" type="submit" value="Подписаться">
           </form>
         </section>
 
         <section class="contacts">
-          <h2 class="visually-hidden">Как с нами связаться</h2>
+          <h2 class="visually-hidden">Как с нами связаться.</h2>
           <ul class="contacts-socials-list">
             <li class="contacts-socials-item">
               <a class="contacts-socials-link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
+                <span class="visually-hidden">ВКонтакте.</span>
                 <svg class="contacts-socials-icon" aria-hidden="true" focusable="false" width="25" height="15"
                   viewBox="0 0 25 15">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -340,7 +344,7 @@
             </li>
             <li class="contacts-socials-item">
               <a class="contacts-socials-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
+                <span class="visually-hidden">Телеграм.</span>
                 <svg class="contacts-socials-icon" aria-hidden="true" focusable="false" width="18" height="16"
                   viewBox="0 0 18 16">
                   <path
@@ -350,7 +354,7 @@
             </li>
             <li class="contacts-socials-item">
               <a class="contacts-socials-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Ютуб</span>
+                <span class="visually-hidden">Ютуб.</span>
                 <svg class="contacts-socials-icon" aria-hidden="true" focusable="false" width="23" height="18">
                   <path
                     d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z" />
@@ -358,14 +362,21 @@
               </a>
             </li>
           </ul>
-          <a class="contacts-link contacts-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a class="contacts-link contacts-copyright-link" href="https://htmlacademy.ru/"
-            aria-label="Разработчик HTML Academy. Перейти на сайт.">
-            <svg fill="currentColor" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34">
-              <path
-                d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
-            </svg>
-          </a>
+          <ul class="contacts-phone-list">
+            <li class="contacts-phone-item">
+              <a class="contacts-link contacts-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </li>
+          </ul>
+          <div class="contacts-copyright-container">
+            <a class="contacts-link contacts-copyright-link" href="https://htmlacademy.ru/"
+              aria-label="Разработчик HTML Academy. Перейти на сайт.">
+              <svg fill="currentColor" aria-hidden="true" focusable="false" width="115" height="34"
+                viewBox="0 0 115 34">
+                <path
+                  d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
+              </svg>
+            </a>
+          </div>
         </section>
 
       </footer>
