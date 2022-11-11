@@ -397,16 +397,13 @@ body {
 .navigation-order-button {
   padding-left: 34px;
   padding-right: 34px;
-
 }
 
 .hero {
   min-height: 485px;
   margin: 0 auto;
-
   text-align: center;
   color: #ffffff;
-
   background-color: #3f5e72;
   background-image: url("../images/index/hero-divider.svg"), url("../images/index/hero-background.jpg");
   background-repeat: no-repeat;
@@ -552,13 +549,10 @@ body {
 
 .hotels {
   border-bottom: 1px solid #e6e6e6;
-  ;
 }
 
 .hotels-list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 340px 20px 340px 20px 340px;
   grid-template-columns: repeat(3, 340px);
   margin: 0;
   padding: 0;
@@ -675,20 +669,20 @@ body {
 }
 
 .contacts-socials-icon {
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .contacts-socials-link:hover .contacts-socials-icon {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .contacts-socials-link:focus-visible .contacts-socials-icon {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 @supports not selector(::focus-visible) {
   .contacts-socials-link:focus .contacts-socials-icon {
-    fill: #68A2CA;
+    fill: #68a2ca;
   }
 }
 
@@ -726,7 +720,7 @@ body {
 }
 
 .contacts-link:focus-visible {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   color: #756157;
 }
 
@@ -746,11 +740,8 @@ body {
 }
 
 .contacts-copyright-link {
-  margin-top: 3px;
-}
-
-.contacts-copyright-link:not(:last-child) {
   display: block;
+  margin-top: 3px;
 }
 
 .contacts-copyright-link:not(:last-child) {
@@ -997,9 +988,6 @@ body {
   background-color: inherit;
   -webkit-transform-origin: center;
           transform-origin: center;
-}
-
-.modal-more-icon::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
@@ -1102,8 +1090,7 @@ body {
 .catalog-filter-container {
   padding-top: 35px;
   padding-bottom: 37px;
-  color: #FFFFFF;
-
+  color: #ffffff;
   background-color: #3f5e72;
   background-image: url("../images/catalog/catalog-hero-background.jpg");
   background-repeat: no-repeat;
@@ -1234,14 +1221,13 @@ body {
 
 .checkbox-input:focus-visible + .control-mark,
 .radio-input:focus-visible + .control-mark {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 @supports not selector(:focus-visible) {
-
   .checkbox-input:focus + .control-mark,
   .radio-input:focus + .control-mark {
-    outline: 3px solid #83B3D3;
+    outline: 3px solid #83b3d3;
   }
 }
 
@@ -1447,7 +1433,7 @@ body {
   display: block;
   width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1488,7 +1474,7 @@ body {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
 
@@ -1545,14 +1531,10 @@ body {
 
 .hotel-card-wrapper {
   margin-top: auto;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 140px 20px 140px;
   grid-template-columns: 140px 140px;
   row-gap: 16px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  column-gap: 20px;
 }
 
 .hotel-card-stars {
