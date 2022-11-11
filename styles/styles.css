@@ -5,6 +5,7 @@
 * Browsers: last 1 version
 */
 
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -52,7 +53,7 @@
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
   background-color: #756157;
   border: none;
@@ -64,11 +65,11 @@
 }
 
 .button-blue {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-green {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button-transparent {
@@ -80,11 +81,11 @@
 }
 
 .button-blue:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-green:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button-transparent:hover {
@@ -97,11 +98,11 @@
 }
 
 .button-blue:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-green:focus-visible {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button-transparent:focus-visible {
@@ -114,11 +115,11 @@
   }
 
   .button-blue:focus {
-    background-color: #68A2CA;
+    background-color: #68a2ca;
   }
 
   .button-green:focus {
-    background-color: #6C9E42;
+    background-color: #6c9e42;
   }
 
   .button-transparent:focus {
@@ -132,15 +133,11 @@
 }
 
 .button-blue:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-green:active {
-  background-color: #7DB54F;
-}
-
-.button-transparent:active {
-  background-color: transparent;
+  background-color: #7db54f;
 }
 
 .button-transparent:active {
@@ -149,7 +146,7 @@
 }
 
 .button:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .button-transparent:disabled {
@@ -163,7 +160,7 @@
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
 }
@@ -189,11 +186,11 @@
 }
 
 .input-text:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .input-text:focus {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .input-text:active {
@@ -220,7 +217,7 @@ body {
   line-height: 26px;
   color: #333333;
 
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .page-container {
@@ -229,7 +226,7 @@ body {
   min-height: 100%;
   width: 1200px;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -349,7 +346,7 @@ body {
 
 .user-navigation-link:hover .favorites-amount {
   opacity: 0.9;
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .user-navigation-link:focus-visible {
@@ -392,9 +389,9 @@ body {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .navigation-order-button {
@@ -408,9 +405,9 @@ body {
   margin: 0 auto;
 
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 
-  background-color: #3F5E72;
+  background-color: #3f5e72;
   background-image: url("../images/index/hero-divider.svg"), url("../images/index/hero-background.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center;
@@ -427,7 +424,7 @@ body {
 }
 
 .advantages-title-container {
-  padding: 69px 274px 65px;
+  padding: 69px 272px 65px;
 }
 
 .advantages-about-sedona {
@@ -464,7 +461,7 @@ body {
   justify-content: center;
   width: 400px;
   min-height: 384px;
-  padding: 80px 85px 98px;
+  padding: 80px 84px 98px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -536,9 +533,9 @@ body {
 }
 
 .advantages-background-bright {
-  color: #FFFFFF;
+  color: #ffffff;
 
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-background-bright .advantages-subtitle {
@@ -554,7 +551,7 @@ body {
 }
 
 .hotels {
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
   ;
 }
 
@@ -605,9 +602,9 @@ body {
 }
 
 .subscribe-index {
-  color: #FFFFFF;
+  color: #ffffff;
 
-  background-color: #3F5E72;
+  background-color: #3f5e72;
   background-image: url("../images/footer/footer-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -625,7 +622,7 @@ body {
 }
 
 .subscribe-index .subscribe-title {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subscribe-description {
@@ -776,7 +773,7 @@ body {
   margin: auto;
   min-width: 717px;
   padding: 65px 68px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
@@ -793,7 +790,7 @@ body {
   height: 52px;
   border: none;
   border-radius: 50%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .modal-close-icon::before,
@@ -821,16 +818,16 @@ body {
 }
 
 .modal-close:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-close:focus-visible {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 @supports not selector(:focus-visible) {
   .modal-close:focus {
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
   }
 }
 
@@ -887,7 +884,7 @@ body {
 }
 
 .modal-massage-error {
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .modal-guests-container {
@@ -925,7 +922,7 @@ body {
   background-image: url("../images/index/modal-tooltip-i.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   border: none;
   border-radius: 13px;
 }
@@ -937,13 +934,14 @@ body {
   padding: 15px 18px 18px 22px;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   left: 50%;
   top: 49px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: none;
   z-index: 2;
 }
@@ -970,7 +968,7 @@ body {
 .guests-number-wrapper {
   display: flex;
   border-radius: 4px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .modal-less-icon {
@@ -1051,11 +1049,12 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  -moz-appearance: textfield;
 }
 
 .guests-input::-webkit-outer-spin-button,
@@ -1066,23 +1065,23 @@ body {
 }
 
 .guests-input:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .guests-input:focus-visible {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   z-index: 1;
 }
 
 @supports not selector(:focus-visible) {
   .guests-input:focus {
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
     z-index: 1;
   }
 }
 
 .guests-input:active {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   box-shadow: inset 0 0 0 2px #000000;
   outline: none;
 }
@@ -1105,7 +1104,7 @@ body {
   padding-bottom: 37px;
   color: #FFFFFF;
 
-  background-color: #3F5E72;
+  background-color: #3f5e72;
   background-image: url("../images/catalog/catalog-hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1137,7 +1136,7 @@ body {
 }
 
 .breadcrumbs-link {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -1204,7 +1203,7 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 12px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .control-mark-checkbox {
@@ -1224,8 +1223,8 @@ body {
 .radio-input:checked + .control-mark-radio {
   width: 20px;
   height: 20px;
-  border: 5px solid #FFFFFF;
-  background-color: #3F5E72;
+  border: 5px solid #ffffff;
+  background-color: #3f5e72;
 }
 
 .checkbox-input:hover ~ span,
@@ -1305,7 +1304,7 @@ body {
   font: inherit;
   font-size: 18px;
   line-height: 24px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   -webkit-appearance: textfield;
      -moz-appearance: textfield;
           appearance: textfield;
@@ -1348,7 +1347,7 @@ body {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .range-toggle {
@@ -1357,12 +1356,12 @@ body {
   height: 20px;
   border: none;
   border-radius: 5px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
 .range-toggle:active {
-  outline: 2px solid #83B3D3;
+  outline: 2px solid #83b3d3;
 }
 
 .toggle-min {
@@ -1421,11 +1420,11 @@ body {
 }
 
 .results-select-control:hover {
-  border-color: #68A2CA;
+  border-color: #68a2ca;
 }
 
 .results-select-control:active {
-  border-color: #3F5E72;
+  border-color: #3f5e72;
 }
 
 .results-select-control:disabled {
@@ -1588,7 +1587,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination {
@@ -1610,34 +1609,34 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   border-radius: 4px;
   text-decoration: none;
 }
 
 .pagination-link[href]:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link[href]:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 @supports not selector(:focus-visible) {
   .pagination-link[href]:focus {
-    background-color: #68A2CA;
+    background-color: #68a2ca;
   }
 }
 
 .pagination-link[href]:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .pagination-link-current {
   color: #000000;
 
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-show-more {
