@@ -838,14 +838,9 @@ body {
 }
 
 .modal-date-container {
-  display: -ms-grid;
   display: grid;
   align-items: baseline;
-  -ms-grid-columns: 119px 18px 440px;
-  grid-template-columns: 119px 440px;
-  -webkit-column-gap: 18px;
-     -moz-column-gap: 18px;
-          column-gap: 18px;
+  column-gap: 18px;
 }
 
 .modal-label {
@@ -1398,11 +1393,9 @@ body {
   background-repeat: no-repeat;
   background-position: right 20px center;
 
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .results-select-control:hover {
@@ -1464,7 +1457,6 @@ body {
 }
 
 .hotel-card {
-  display: -ms-grid;
   display: grid;
   -ms-grid-columns: 140px 20px 140px;
   grid-template-columns: 140px 140px;
