@@ -203,6 +203,11 @@
   box-shadow: none;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 html {
   height: 100%;
 }
@@ -1498,8 +1503,6 @@ body {
 }
 
 .hotel-card-photo {
-  -o-object-fit: contain;
-     object-fit: contain;
   display: block;
 }
 
