@@ -317,6 +317,24 @@ body {
   padding: 23px 12px 17px;
 }
 
+
+.user-navigation-link .favorites-amount {
+  position: absolute;
+  top: 11px;
+  right: 3px;
+  min-height: 20px;
+  min-width: 20px;
+  padding: 5px;
+  border-radius: 10px;
+
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #7db54f;
+}
+
 .user-navigation-icon {
   fill: #000000;
 }
@@ -356,23 +374,6 @@ body {
 
 .user-navigation-link:active .favorites-amount {
   background-color: rgba(125, 181, 79, 0.3);
-}
-
-.user-navigation-favorites .favorites-amount {
-  position: absolute;
-  top: 11px;
-  right: 3px;
-  min-height: 20px;
-  min-width: 20px;
-  padding: 5px;
-  border-radius: 10px;
-
-  font-size: 10px;
-  line-height: 10px;
-  text-align: center;
-  color: #ffffff;
-
-  background-color: #7db54f;
 }
 
 .navigation-order-button {
