@@ -744,7 +744,7 @@ body {
   position: relative;
   margin: auto;
   min-width: 717px;
-  padding: 65px 68px;
+  padding: 65px 70px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
@@ -817,6 +817,7 @@ body {
 
 .modal-date-container {
   display: grid;
+  grid-template-columns: 119px 440px;
   align-items: baseline;
   column-gap: 18px;
 }
@@ -853,6 +854,8 @@ body {
 
 .modal-guests-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .guests-number {
@@ -880,8 +883,8 @@ body {
 .tooltip-toggle {
   width: 26px;
   height: 26px;
+  display: flex;
   margin: 0;
-  margin-top: 6px;
   padding: 0;
   background-image: url("../images/index/modal-tooltip-i.svg");
   background-repeat: no-repeat;
@@ -895,7 +898,7 @@ body {
   position: absolute;
   width: 256px;
   margin: 0;
-  padding: 15px 18px 18px 22px;
+  padding: 21px;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -903,7 +906,7 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   left: 50%;
-  top: 49px;
+  top: 41px;
   transform: translateX(-50%);
   display: none;
   z-index: 2;
@@ -1257,6 +1260,7 @@ body {
   padding: 12px 20px;
   border: none;
   font: inherit;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   background-color: #f2f2f2;
