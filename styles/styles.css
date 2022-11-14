@@ -614,11 +614,13 @@ body {
 }
 
 .subscribe-input-email {
+  margin: 0;
   width: 452px;
   border-radius: 4px 0 0 4px;
 }
 
 .subscribe-button {
+  margin: 0;
   padding-left: 50px;
   padding-right: 50px;
   font-size: 20px;
